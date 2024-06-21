@@ -9,6 +9,7 @@ namespace Store
     public interface IBookRepository
     {
         // prefix All when we expect multiple results;
-        Book[] GetAllByTitle(string titlePart);
+        Book[] GetAllByIsbn(string isbn);
+        Book[] GetAllByTitleOfAuthor(string titlePart);
     }
 }
